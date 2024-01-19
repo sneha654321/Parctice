@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Array Methods</h1>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<h1>Array Search and Sort</h1>
+<p id="d1"></p>
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let size = fruits.length;
+document.getElementById("demo1").innerHTML = size+"<br>"+fruits.toString()+"<br>"+fruits.at(2)+"<br>"+fruits.join(" * ")+"<br>"+fruits.pop()+"<br>"+fruits.push("Kiwi");
+document.getElementById("demo2").innerHTML = fruits;
+const fruit = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo3").innerHTML = fruit;
+fruit.shift();
+document.getElementById("demo4").innerHTML = fruit;
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+
+const myChildren = myGirls.concat(myBoys);
+document.getElementById("demo5").innerHTML = myChildren+"<br>"+myChildren.copyWithin(2,0)
+const f = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo6").innerHTML = f;
+
+f.splice(2, 0, "Lemon", "Kiwi");
+document.getElementById("demo7").innerHTML = f;
+
+const fruits1 = ["Apple", "Orange", "Apple", "Mango"];
+let position = fruits1.indexOf("Apple") + 1;
+let position1 = fruits1.lastIndexOf("Apple") + 1;
+document.getElementById("d1").innerHTML = "Apple is found in position " + position+"<br>"+"Apple is found in position " + position1+"<br>"+fruits1.includes("Mango")+"<br>"+fruits1.sort()+"<br>"+fruits1.reverse();
+</script>
+
+</body>
+</html>

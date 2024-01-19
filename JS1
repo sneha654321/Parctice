@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript</h2>
+
+<p>A <b>JavaScript program</b> is a list of <b>statements</b></p>
+
+<p id="demo"></p>
+<p id="demo1">My name is:</p>
+<script>
+let x, y, z;  
+x = 5;        
+y = 6;       
+z = x + y;  
+
+document.getElementById("demo1").innerHTML =
+"The value of z is " + z + ".";  
+let carName1 = "Siva"; 
+let carName2 = 'Sneha';
+
+document.getElementById("demo").innerHTML =
+carName1 + " " + carName2; 
+</script>
+
+</body>
+</html>
+

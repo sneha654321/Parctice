@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript String</h1>
+<h2>String Methods</h2>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<p id="demo11"></p>
+<script>
+var text = "HELLO WORLD";
+document.getElementById("demo1").innerHTML = text.charAt(0);
+document.getElementById("demo2").innerHTML = text.at(2);
+var s = "Apple, Banana, Kiwi";
+var part = s.slice(7,13);
+document.getElementById("demo3").innerHTML = part; 
+var si = "Apple, Banana, Kiwi";
+var part = si.substr(7);
+document.getElementById("demo4").innerHTML = part; 
+var sis = "Siva Sneha";
+var part = sis.toUpperCase();
+document.getElementById("demo5").innerHTML = part; 
+var a = "Lakshmi";
+var a1 = "Narayana";
+var a2=a.concat(" ",a1);
+document.getElementById("demo6").innerHTML = a2; 
+let text1 = "      Radhika      ";
+let text2 = text1.trim();
+document.getElementById("demo7").innerHTML = text2;
+let t = "5";
+t = t.padStart(4,"0");
+
+document.getElementById("demo8").innerHTML = t;
+let t1 = "Anusha!";
+let result = t1.repeat(2);
+
+document.getElementById("demo9").innerHTML = result;
+let texts = "Please visit Microsoft!";
+let newText = texts.replace("Microsoft", "W3Schools");
+document.getElementById("demo10").innerHTML = newText;
+let one = "Hello";
+const myArr = one.split("");
+
+one="";
+for (let i = 0; i < myArr.length; i++) {
+  one+= myArr[i] + "<br>"
+}
+document.getElementById("demo11").innerHTML =one;
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+a{
+  color: hotpink;
+}
+
+table,th,td
+{
+ border:1px solid;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+text-align:center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  text-align:center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#grad1 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, yellow);
+}
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+</style>
+
+</head>
+<body>
+<p class="p1">This is a paragraph, shown in the Times New Roman font.</p>
+<p class="p2">This is a paragraph, shown in the Arial font.</p>
+<p class="p3">This is a paragraph, shown in the Lucida Console font.</p>
+<h2>The list-style-type Property</h2>
+
+<p>Example of unordered lists:</p>
+<ul class="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ul class="b">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<p>Example of ordered lists:</p>
+<ol class="c">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="d">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+<i class="glyphicon glyphicon-cloud"></i>
+<i class="glyphicon glyphicon-remove"></i>
+<i class="glyphicon glyphicon-user"></i>
+<i class="glyphicon glyphicon-envelope"></i>
+<i class="glyphicon glyphicon-thumbs-up"></i><br>
+<h3><a href="default.asp" target="_blank">This is a link</a></h3><br>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table><br>
+<div class="dropdown">
+  <span>Mouse over me</span>
+  <div class="dropdown-content">
+  <p>Hello World!</p>
+  </div>
+</div>
+
+<div id="grad1"></div>
+</body>
+</html>
+
+
+

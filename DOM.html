@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head><title> DOM</title></head>
+<body id="b">
+<div id="id">
+<h1 id="id1">Heading Level 1</h1>
+<h2 id="id2">Heading Level 2</h2>
+</div>
+<h3 class="cls1">Heading Level 3</h3>
+<h4 class="cls1">Heading Level 4</h4>
+<div class="first">
+<p>This is a paragraph</p>
+<p>This is another paragraph</p>
+</div>
+<div class="first">
+<p>This is a paragraph</p>
+<p>This is another paragraph</p>
+</div>
+<div class="second">
+<p>This is a paragraph</p>
+<p id="span">This is another paragraph</p>
+</div>
+<p id="r">Remove</p>
+<ul id="list">
+<li>apple</li>
+<li>banana</li>
+<li>swiggy</li>
+</ul>
+<button onclick="fun()">
+click here!</button>
+<img id="i">Image</img>
+<script>
+var x=document.getElementById("id2");
+console.log(x);
+var x=document.getElementsByClassName("cls1");
+console.log(x);
+var x=document.getElementsByTagName("p");
+console.log(x);
+var x=document.querySelector(".first");
+console.log(x);
+var x=document.querySelector("#id1");
+console.log(x);
+var x=document.querySelector("p");
+console.log(x);
+var x=document.querySelectorAll(".first");
+console.log(x);
+//create an element
+var y=document.createElement('h5');
+y.innerText="Hello prends";
+document.body.appendChild(y);
+console.log(y);
+//inserting before parent element
+var b=document.createElement('button');
+b.innerText="Click me";
+var z=document.getElementById("id");
+var a=document.getElementById("id2");
+z.insertBefore(b,a);
+//remove an element
+var q=document.getElementById("r");
+q.remove();
+var w=document.getElementById("id");
+var q=document.getElementById("id1");
+w.removeChild(q);
+//replace an element
+var a=document.createElement('p');
+a.innerText="This is anushua";
+document.body.appendChild(a);
+var b=document.getElementById("span");
+b.replaceWith(a);
+function fun(){
+var n=document.createTextNode("mango");
+var c=document.getElementById("list").children[0];
+c.replaceChild(n,c.childNodes[0]);
+}
+//repalceChildren() method
+var q=document.getElementById("id2");
+var r=document.createElement('p');
+r.innerHTML="<b>Hello<b>";
+q.replaceChildren(r);
+//style
+var q=document.getElementById("id2");
+q.style.color="pink";
+q.getAttribute("id2");
+var r=document.createElement('p');
+r.innerText="<b>Hello<b>";
+document.body.appendChild(r);
+var r=document.createElement('p');
+r.innerHTML="<b>Hello<b>";
+document.body.appendChild(r);
+//setattribute
+var q=document.getElementById("i");
+q.setAttribute('src',"ka.png");
+console.log(q.getAttribute('src'));
+console.log(q.hasAttribute('src'));
+//remove attribute
+console.log(q.removeAttribute('src'));
+var x = document.getElementById("b");
+x.style.backgroundColor="pink";
+//console.log(x);
+</script>
+<body>
+</html>
